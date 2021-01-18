@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Src",
+    "\\Src\\CPU_SrcCode",
+    "\\Src\\CPU_SrcCode\\Cache",
+    "\\Src\\CPU_SrcCode\\CacheSrcCode",
+    "\\Src\\CPU_SrcCode\\ExMemSegReg",
+    "\\Src\\CPU_SrcCode\\IdExSegReg",
+    "\\Src\\CPU_SrcCode\\IfIdSegReg"
+  ],
+  "SelectedNode": "\\Src\\CPU_SrcCode\\Hazard.v",
+  "PreviewInSolutionExplorer": false
+}

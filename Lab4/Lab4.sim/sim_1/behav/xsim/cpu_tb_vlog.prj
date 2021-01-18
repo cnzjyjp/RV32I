@@ -1,0 +1,47 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Src/CPU_SrcCode/ALU.v" \
+"../../../../Src/CPU_SrcCode/IdExSegReg/AddrEx.v" \
+"../../../../Src/CPU_SrcCode/ExMemSegReg/AddrMem.v" \
+"../../../../Src/CPU_SrcCode/MemWbSegReg/AddrWb.v" \
+"../../../../Src/CPU_SrcCode/IdExSegReg/BrTarget.v" \
+"../../../../Src/CPU_SrcCode/BranchDecision.v" \
+"../../../../Src/CPU_SrcCode/CSRRegisterFile.v" \
+"../../../../Src/CPU_SrcCode/ControllerDecoder.v" \
+"../../../../Src/CPU_SrcCode/IdExSegReg/CtrlEx.v" \
+"../../../../Src/CPU_SrcCode/ExMemSegReg/CtrlMem.v" \
+"../../../../Src/CPU_SrcCode/MemWbSegReg/CtrlWb.v" \
+"../../../../Src/CPU_SrcCode/DataExtend.v" \
+"../../../../Src/CPU_SrcCode/GeneralRegister.v" \
+"../../../../Src/CPU_SrcCode/Hazard.v" \
+"../../../../Src/CPU_SrcCode/IfIdSegReg/IR.v" \
+"../../../../Src/CPU_SrcCode/ImmExtend.v" \
+"../../../../Src/CPU_SrcCode/Cache/InstructionCache.v" \
+"../../../../Src/CPU_SrcCode/NPCGenerator.v" \
+"../../../../Src/CPU_SrcCode/IdExSegReg/Op1.v" \
+"../../../../Src/CPU_SrcCode/IdExSegReg/Op2.v" \
+"../../../../Src/CPU_SrcCode/PC.v" \
+"../../../../Src/CPU_SrcCode/IdExSegReg/PcEx.v" \
+"../../../../Src/CPU_SrcCode/IfIdSegReg/PcId.v" \
+"../../../../Src/CPU_SrcCode/RV32ICore.v" \
+"../../../../Src/CPU_SrcCode/IdExSegReg/Reg2Ex.v" \
+"../../../../Src/CPU_SrcCode/ExMemSegReg/Reg2Mem.v" \
+"../../../../Src/CPU_SrcCode/Reg2Wb.v" \
+"../../../../Src/CPU_SrcCode/ExMemSegReg/Result.v" \
+"../../../../Src/CPU_SrcCode/MemWbSegReg/WbData.v" \
+
+sv xil_defaultlib  \
+"../../../../Src/CPU_SrcCode/BHT.sv" \
+"../../../../Src/CPU_SrcCode/BTB.sv" \
+"../../../../Src/CPU_SrcCode/CacheSrcCode/cache.sv" \
+"../../../../Src/CPU_SrcCode/CacheSrcCode/main_mem.sv" \
+"../../../../Src/CPU_SrcCode/CacheSrcCode/mem.sv" \
+
+verilog xil_defaultlib  \
+"../../../../Src/Simulation/cpu_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
